@@ -6,8 +6,7 @@
       bootstrap: 'libs/bootstrap',
       underscore: 'libs/underscore',
       backbone: 'libs/backbone',
-      layoutmanager: 'libs/backbone.layoutmanager',
-      modernizr: 'libs/modernizr'
+      layoutmanager: 'libs/backbone.layoutmanager'
     },
     shim: {
       underscore: {

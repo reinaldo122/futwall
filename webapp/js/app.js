@@ -1,5 +1,5 @@
 (function() {
-  define(['jquery', 'underscore', 'backbone', 'layoutmanager', 'bootstrap', 'modernizr'], function($, _, Backbone) {
+  define(['jquery', 'underscore', 'backbone', 'layoutmanager', 'bootstrap'], function($, _, Backbone) {
     var app;
     $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
       options.url = options.url;

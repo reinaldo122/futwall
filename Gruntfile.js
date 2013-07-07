@@ -298,17 +298,17 @@ module.exports = function (grunt) {
             ]
         },
         requirejs: {
-                    compile: {
-                        options: {
-                          name          : 'main',
-                          mainConfigFile: '<%= yeoman.app %>/js/config.js',
-                          baseUrl       : '<%= yeoman.app %>/js/',
-                          optimize      : "uglify",
-                          optimizeCss   : "standard",
-                          out           : '<%= yeoman.dist %>/js/app.main.js',
-                          preserveLicenseComments: false
-                        }
-                    }
+            compile: {
+                options: {
+                  name          : 'main',
+                  mainConfigFile: '<%= yeoman.app %>/js/config.js',
+                  baseUrl       : '<%= yeoman.app %>/js/',
+                  optimize      : "uglify",
+                  optimizeCss   : "standard",
+                  out           : '<%= yeoman.dist %>/js/app.main.js',
+                  preserveLicenseComments: false
+                }
+            }
         },
         less: {
             

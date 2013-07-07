@@ -6,7 +6,6 @@ define [
 	  #Plugins
 	  'layoutmanager'
     'bootstrap'
-    'modernizr'
 
 ],($, _, Backbone) ->
 

@@ -7,7 +7,6 @@ require.config {
 	    underscore: 'libs/underscore'
 	    backbone: 'libs/backbone'
 	    layoutmanager:'libs/backbone.layoutmanager'
-	    modernizr: 'libs/modernizr'
 
 	shim:
 		underscore: 
