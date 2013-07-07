@@ -25,6 +25,10 @@ Designed by: Crazy Eye Studios http://crazyeyestudios.com
 	font-weight: bold;
 	font-style: normal;
 }
+
+.markerTypo {
+	font-family: 'Permanent Marker', cursive;
+}
 /*@import url(http://fonts.googleapis.com/css?family=Inconsolata:700);*/
 /*@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);*/
 
