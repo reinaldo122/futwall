@@ -1,0 +1,182 @@
+/**
+Designed for: Futwall http://www.myfutwall.com
+Designed by: Crazy Eye Studios http://crazyeyestudios.com
+
+**/
+
+/**
+================ Resets and overrides
+*/
+/**
+================ Links and type
+*/
+@font-face {
+	font-family: 'VIKINGS';
+	font-weight: bold;
+	font-style: normal;
+	src: url('fonts/279CD7_0_0.eot');
+	src: url('fonts/279CD7_0_0.eot?#iefix') format('embedded-opentype'),
+			url('fonts/279CD7_0_0.woff') format('woff'),
+			url('fonts/279CD7_0_0.ttf') format('truetype'),
+			url('fonts/279CD7_0_0.svg#wf') format('svg');
+}
+.viking {
+	font-family: 'VIKINGS';
+	font-weight: bold;
+	font-style: normal;
+}
+/*@import url(http://fonts.googleapis.com/css?family=Inconsolata:700);*/
+/*@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);*/
+
+/**
+================ Main layout
+*/
+
+body {
+	background-image:url('/img/backgrounds/dark.png');
+}
+
+.header .navbar {
+	background-image:url('/img/fondo/barra-home.jpg');
+	opacity: 0.7;
+}
+
+.main .footer {
+	padding: 1% 0 0;
+	background-image:url('/img/fondo/barra-home.jpg');
+	opacity: 1;
+}
+
+.navbar .nav > li > a {
+	color: #d3d3d3; /*LightGray*/
+	font-size: 25px;
+	padding: 15px 30px;
+	text-shadow: 3px 3px #000;
+}
+
+.navbar .nav > li > a:hover , .footer, .footer a,.footer a:hover{
+	color: white;
+}
+
+/**
+================ Secondary layout structures
+*/
+
+#gray-row, #pictures-row{
+	margin-top: 15px;
+}
+
+#gray-row img, #pictures-row img {
+	padding: 2% 0 2% 0;
+}
+/**
+================ Form elements
+*/
+
+
+/**
+================ Miscellaneous
+*/
+
+.unselectable , img, p, body{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-drag: none;
+	-khtml-user-drag: none;
+	-webkit-user-drag: none;
+	-ms-user-drag: none;
+	user-drag: none;
+}
+
+/**
+================ Selectors
+*/
+ 
+/**
+================ Media Queries
+*/
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+	.page {
+		padding-top: 60px;
+	}
+
+	.header .navbar {
+		max-height: 60px;
+	}
+
+	.navbar .nav > li > a:hover {
+		-webkit-transform: rotate(10deg);
+			-moz-transform: rotate(10deg);
+				-ms-transform: rotate(10deg);
+					transform: rotate(10deg);
+	}
+
+	*{
+	  -webkit-transition:all 0.5s ease;
+	    -moz-transition:all 0.5s ease;
+	      -o-transition:all 0.5s ease;
+	        transition:all 0.5s ease;
+	}
+
+	#blue-row {
+	background-image:url('/img/fondo/barra-azul-1.jpg');
+	}
+
+	#gray-row {
+		background-image: url('/img/backgrounds/grey_wash_wall.png');
+	}
+
+	#pictures-row {
+		background-image:url('/img/fondo/barra-azul-2.jpg');
+	}
+
+	#blue-row .span4:first-child {
+		padding-top: 60px;
+		padding-left: 70px;
+	}
+
+	#blue-row .span4:last-child {
+		padding-top: 20px;
+		padding-left: 10px;
+	}
+}
+
+/* Tablet */
+@media screen and (max-width:960px) {
+	.brand {
+		width: 60px;
+	}
+  .page {
+      padding: 0px;
+      margin: 0px;
+  }
+  #blue-row, #pictures-row, .footer{
+  	background-image:url('/img/backgrounds/dark.png');
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 660px){
+  .main .footer {
+  	background-image: url('/img/backgrounds/dark.png');
+  }
+  #gray-row div > img{
+  	max-width: 200px;
+  }
+  #gray-row div > img, #blue-row div > img, #pictures-row div > img {
+  	margin-left:25%;
+		margin-right:25%;
+		max-width:50%;
+  }
+}
+
+
+
+
+
+
+

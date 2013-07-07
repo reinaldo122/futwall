@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Futwall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css js/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="main"></div>
+
+
+    <script id="main-layout-template" type="text/HTML">
+
+      <div class="header"></div>
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="page"></div>
+        </div>
+      </div>
+      <div class="footer"></div>
+
+      <div id="modals"></div>
+
+    </script>
+
+    <script id="navbar-template" type="text/html">
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="/img/espanol/barrahome/logo.png"></a>
+          <div class="nav-collapse collapse">
+            <ul id="menu-navbar" class="nav">
+              <li>
+                <a id="nosotros" class="viking" href="#">NOSOTROS</a>
+              </li>
+              <li>
+                <a id="equipos" class="viking" href="#">EQUIPOS</a>
+              </li>
+              <li>
+                <a id="noticias" class="viking" href="#">NOTICIAS</a>
+              </li>
+              <li>
+                <a id="galeria" class="viking" href="#">GALERIA</a>
+              </li>
+              <li>
+                <a id="contacto" class="viking" href="#">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script id="home-template" type="text/html">
+      <div id="carousel" class="row-fluid">
+        <div id="banners" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#banners" data-slide-to="0" class="active"></li>
+            <li data-target="#banners" data-slide-to="1" class=""></li>
+            <li data-target="#banners" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/espanol/bannerppalesp/banner1esp.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/espanol/bannerppalesp/banner2esp.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/espanol/bannerppalesp/banner3esp.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/espanol/bannerppalesp/banner4esp.jpg" alt="">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#banners" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#banners" data-slide="next">›</a>
+        </div>
+      </div>
+      <div id="blue-row" class="row-fluid">
+        <div class="span4"><img src="img/espanol/barraazul1/redes1.png"></img></div>
+        <div class="span4"><img src="img/espanol/barraazul1/texto-falso.png"></img></div>
+        <div class="span4"><img src="img/espanol/barraazul1/login.png"></img></div>
+      </div>
+      <div id="gray-row" class="row-fluid">
+        <div class="span4"><img src="/img/videos/v1.jpg"></img></div>
+        <div class="span4"><img src="/img/videos/v2.jpg"></img></div>
+        <div class="span4"><img src="/img/videos/v3.jpg"></img></div>
+      </div>
+      <div id="fill-row" class="row-fluid"></div>
+      <div id="pictures-row" class="row-fluid blue-row">
+        <div class="span4">
+          <div class="span4"><img src="/img/fotos/f1.png"></img></div>
+          <div class="span4"><img src="/img/fotos/f2.png"></img></div>
+          <div class="span4"><img src="/img/fotos/f3.png"></img></div>
+        </div>
+        <div class="span4">
+          <div class="span4"><img src="/img/fotos/f4.png"></img></div>
+          <div class="span4"><img src="/img/fotos/f5.png"></img></div>
+          <div class="span4"><img src="/img/fotos/f6.png"></img></div>
+        </div>
+        <div class="span4">
+          <div class="span4"><img src="/img/fotos/f7.png"></img></div>
+          <div class="span4"><img src="/img/fotos/f8.png"></img></div>
+          <div class="span4"><img src="/img/fotos/f1.png"></img></div>
+        </div>
+      </div>
+    </script>
+
+    <script id="footer-template" type="text/html">
+      <div class="row-fluid">
+        <div class="span4 offset4 text-center viking">
+          <img src="/img/footer/redes.png">
+          <p>Futwall ®</p>
+          Design by <a href="http://crazyeyestudios.com">Crazy Eye Studios</a>
+        </div>
+      </div>
+    </script>
+
+    <script id="nosotros-template" type="text/html">
+      <div class="row-fluid">
+        <h1>Página NOSOTROS</h1>
+      <div>
+    </script>
+
+    <script id="equipos-template" type="text/html">
+      <div class="row-fluid">
+        <h1>Página EQUIPOS</h1>
+      <div>
+    </script>
+
+    <script id="noticias-template" type="text/html">
+      <div class="row-fluid">
+        <h1>Página NOTICIAS</h1>
+      <div>
+    </script>
+
+    <script id="galeria-template" type="text/html">
+      <div class="row-fluid">
+        <h1>Página GALERIA</h1>
+      <div>
+    </script>
+
+    <script id="contacto-template" type="text/html">
+      <div class="row-fluid">
+        <h1>Página CONTACTO</h1>
+      <div>
+    </script>
+
+    <!-- build:js js/app.main.js -->
+    <script data-main="js/config" src="js/libs/require.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
