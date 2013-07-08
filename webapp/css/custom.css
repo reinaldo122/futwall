@@ -25,6 +25,18 @@ Designed by: Crazy Eye Studios http://crazyeyestudios.com
 	font-weight: bold;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'EspumaPro-Regular';
+	src: url('fonts/279F04_0_0.eot');
+	src: url('fonts/279F04_0_0.eot?#iefix') format('embedded-opentype'),
+		url('fonts/279F04_0_0.woff') format('woff'),
+		url('fonts/279F04_0_0.ttf') format('truetype');
+	}
+.body { 
+	font-family: EspumaPro-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
 
 .markerTypo {
 	font-family: 'Permanent Marker', cursive;
@@ -41,13 +53,13 @@ body {
 }
 
 .header .navbar {
-	background-image:url('/img/fondo/barra-home.jpg');
+	background-image:url('/img/backgrounds/barra-home.jpg');
 	opacity: 0.7;
 }
 
 .main .footer {
 	padding: 1% 0 0;
-	background-image:url('/img/fondo/barra-home.jpg');
+	background-image:url('/img/backgrounds/barra-home.jpg');
 	opacity: 1;
 }
 
@@ -72,6 +84,15 @@ body {
 
 #gray-row img, #pictures-row img {
 	padding: 2% 0 2% 0;
+}
+#blue-row {
+	color: white;
+	line-height: 1;
+	text-align: justify;
+}
+#blue-row h1 {
+	font-size: 60px;
+	font-weight: bold;
 }
 /**
 ================ Form elements
@@ -127,7 +148,7 @@ body {
 	}
 
 	#blue-row {
-	background-image:url('/img/fondo/barra-azul-1.jpg');
+	background-image:url('/img/backgrounds/blue.jpg');
 	}
 
 	#gray-row {
@@ -135,12 +156,11 @@ body {
 	}
 
 	#pictures-row {
-		background-image:url('/img/fondo/barra-azul-2.jpg');
+		background-image:url('/img/backgrounds/blue.jpg');
 	}
 
-	#blue-row .span4:first-child {
-		padding-top: 60px;
-		padding-left: 70px;
+	#blue-row .span4 {
+		vertical-align: center;
 	}
 
 	#blue-row .span4:last-child {
