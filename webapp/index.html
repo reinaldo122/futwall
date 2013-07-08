@@ -13,7 +13,7 @@
     <!-- build:css js/main.min.css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Permanent+Marker&text=Progamci%C3%B3nyDse%C3%B1CzEStudsFtwl%C2%AE">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Chela+One">
     <script src="js/libs/modernizr.js"></script>
 </head>
 <body>
@@ -57,6 +57,9 @@
                 <a id="equipos" class="viking" href="#">EQUIPOS</a>
               </li>
               <li>
+                <a id="canchas" class="viking" href="#">CANCHAS</a>
+              </li>
+              <li>
                 <a id="noticias" class="viking" href="#">NOTICIAS</a>
               </li>
               <li>
@@ -98,7 +101,15 @@
       </div>
       <div id="blue-row" class="row-fluid">
         <div class="span4"><img src="img/espanol/barraazul1/redes1.png"></img></div>
-        <div class="span4"><img src="img/espanol/barraazul1/texto-falso.png"></img></div>
+        <div class="span4">
+          <h1 class="viking">FUTWALL</h1>
+          <p class="espuma">
+            <strong>
+              ¿Un juego? ¿Una aventura?
+              Ve un paso más allá, rompe los esquemas y conviértete en una estrella deportiva. Estimula tu mente y cuerpo, llévalos al límite con las acrobacias y jugadas de tu equipo, anota un gol y celebra en grande.
+            </strong>
+          </p>
+        </div>
         <div class="span4"><img src="img/espanol/barraazul1/login.png"></img></div>
       </div>
       <div id="gray-row" class="row-fluid">
@@ -128,46 +139,78 @@
 
     <script id="footer-template" type="text/html">
       <div class="row-fluid">
-        <div class="span4 offset4 text-center markerTypo">
+        <div class="span4 offset4 text-center espuma">
           <img src="/img/footer/redes.png">
-          <p>Futwall ®</p>
-          Programación y Diseño <a href="http://crazyeyestudios.com">Crazy Eye Studios</a>
+          <br><p>Futwall ®</p>
+          Coded & Designed by <strong><a href="http://crazyeyestudios.com">Crazy Eye Studios</a></strong>
         </div>
       </div>
     </script>
 
     <script id="nosotros-template" type="text/html">
       <div class="row-fluid">
-        <h1>Página NOSOTROS</h1>
+        <div class="span1"></div>
+        <div class="span10">
+          <h1>----------------------------------------------NOSOTROS<h1>
+        </div>
+        <div class="span1"></div>
       <div>
     </script>
 
     <script id="equipos-template" type="text/html">
       <div class="row-fluid">
-        <h1>Página EQUIPOS</h1>
+        <div class="span1"></div>
+        <div class="span10">
+          <h1>----------------------------------------------EQUIPOS<h1>
+        </div>
+        <div class="span1"></div>
+      <div>
+    </script>
+
+    <script id="canchas-template" type="text/html">
+      <div class="row-fluid">
+        <div class="span1"></div>
+        <div class="span10">
+          <div id="map-canvas" class="row-fluid map-container">
+          <div>
+        </div>
+        <div class="span1"></div>
       <div>
     </script>
 
     <script id="noticias-template" type="text/html">
       <div class="row-fluid">
-        <h1>Página NOTICIAS</h1>
+        <div class="span1"></div>
+        <div class="span10">
+          <h1>----------------------------------------------NOTICIAS<h1>
+        </div>
+        <div class="span1"></div>
       <div>
     </script>
 
     <script id="galeria-template" type="text/html">
       <div class="row-fluid">
-        <h1>Página GALERIA</h1>
+        <div class="span1"></div>
+        <div class="span10">
+          <h1>----------------------------------------------GALERIA<h1>
+        </div>
+        <div class="span1"></div>
       <div>
     </script>
 
     <script id="contacto-template" type="text/html">
       <div class="row-fluid">
-        <h1>Página CONTACTO</h1>
+        <div class="span1"></div>
+        <div class="span10">
+          <h1>----------------------------------------------CONTACTO<h1>
+        </div>
+        <div class="span1"></div>
       <div>
     </script>
 
     <!-- build:js js/app.main.js -->
     <script data-main="js/config" src="js/libs/require.js"></script>
     <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </body>
 </html>

@@ -8,10 +8,11 @@ define [
   'views/footer'
   'views/nosotros'
   'views/equipos'
+  'views/canchas'
   'views/noticias'
   'views/galeria'
   'views/contacto'
-],(app,NavBar,Home,Footer,Nosotros, Equipos, Noticias, Galeria, Contacto) ->
+],(app,NavBar,Home,Footer,Nosotros, Equipos, Canchas, Noticias, Galeria, Contacto) ->
   class MainPage extends Backbone.Layout
     template : '#main-layout-template'
 
@@ -25,6 +26,7 @@ define [
       "click .brand": "loadHome"
       "click #nosotros": "loadNosotros"
       "click #equipos": "loadEquipos"
+      "click #canchas": "loadCanchas"
       "click #noticias": "loadNoticias"
       "click #galeria": "loadGaleria"
       "click #contacto": "loadContacto"
@@ -43,22 +45,30 @@ define [
       $('.header .navbar').css 'opacity', '0.7'
 
     loadHome: (ev) ->
+      ev.preventDefault()
+      console.log @getView(".page")
       @setView(".page", new Home()).render()
-      return
 
     loadNosotros: (ev) ->
-      console.log "nosotros"
+      ev.preventDefault()
       @setView(".page", new Nosotros()).render()
-      return
 
     loadEquipos: (ev) ->
+      ev.preventDefault()
       @setView(".page", new Equipos()).render()
 
+    loadCanchas: (ev) ->
+      ev.preventDefault()
+      @setView(".page", new Canchas()).render()
+
     loadNoticias: (ev) ->
+      ev.preventDefault()
       @setView(".page", new Noticias()).render()
 
     loadGaleria: (ev) ->
+      ev.preventDefault()
       @setView(".page", new Galeria()).render()
 
     loadContacto: (ev) ->
+      ev.preventDefault()
       @setView(".page", new Contacto()).render()

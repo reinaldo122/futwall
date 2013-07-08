@@ -8,6 +8,7 @@
       backbone: 'libs/backbone',
       layoutmanager: 'libs/backbone.layoutmanager'
     },
+    waitSeconds: 3600,
     shim: {
       underscore: {
         deps: ["jquery"],
