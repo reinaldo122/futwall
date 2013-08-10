@@ -131,6 +131,7 @@ body {
 
 	.header .navbar {
 		max-height: 60px;
+		box-shadow: 0px 10px 5px black;
 	}
 
 	.navbar .nav > li > a:hover {
