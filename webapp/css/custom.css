@@ -78,6 +78,10 @@ body {
 ================ Secondary layout structures
 */
 
+.carousel-inner div img {
+	width: 100%;
+}
+
 #gray-row, #pictures-row{
 	margin-top: 15px;
 }
