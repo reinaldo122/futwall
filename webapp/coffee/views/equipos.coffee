@@ -9,5 +9,6 @@ define [
 			return
 
 		afterRender: () ->
+			
 			return
 	

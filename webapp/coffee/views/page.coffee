@@ -12,7 +12,8 @@ define [
   'views/noticias'
   'views/galeria'
   'views/contacto'
-],(app,NavBar,Home,Footer,Nosotros, Equipos, Canchas, Noticias, Galeria, Contacto) ->
+  'views/reglas'
+],(app,NavBar,Home,Footer,Nosotros, Equipos, Canchas, Noticias, Galeria, Contacto, Reglas) ->
   class MainPage extends Backbone.Layout
     template : '#main-layout-template'
 
@@ -23,15 +24,16 @@ define [
     }
 
     events: {
-      "click .brand": "loadHome"
-      "click #nosotros": "loadNosotros"
-      "click #equipos": "loadEquipos"
-      "click #canchas": "loadCanchas"
-      "click #noticias": "loadNoticias"
-      "click #galeria": "loadGaleria"
-      "click #contacto": "loadContacto"
-      "mouseover #menu-navbar": "solidNavbar"
-      "mouseout #menu-navbar": "transparentNavbar"
+      #"click .brand": "loadHome"
+      #"click #nosotros": "loadNosotros"
+      #"click #reglas": "loadReglas"
+      #"click #equipos": "loadEquipos"
+      #"click #canchas": "loadCanchas"
+      #"click #noticias": "loadNoticias"
+      #"click #galeria": "loadGaleria"
+      #"click #contacto": "loadContacto"
+      #"mouseover #menu-navbar": "solidNavbar"
+      #"mouseout #menu-navbar": "transparentNavbar"
     }
     
     initialize: () ->
@@ -60,6 +62,10 @@ define [
     loadCanchas: (ev) ->
       ev.preventDefault()
       @setView(".page", new Canchas()).render()
+
+    loadReglas: (ev) ->
+      ev.preventDefault()
+      @setView(".page", new Reglas()).render()
 
     loadNoticias: (ev) ->
       ev.preventDefault()

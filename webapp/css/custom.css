@@ -99,6 +99,11 @@ body {
 	font-size: 60px;
 	font-weight: bold;
 }
+#map-canvas {
+	height: 100%;
+	width: 100%;
+	min-height: 400px;
+}
 /**
 ================ Form elements
 */
@@ -137,6 +142,11 @@ body {
 	.header .navbar {
 		max-height: 60px;
 		box-shadow: 0px 10px 5px black;
+		opacity: 0.7;
+	}
+
+	.header .navbar:hover {
+		opacity: 1;
 	}
 
 	.navbar .nav > li > a:hover {
@@ -165,13 +175,16 @@ body {
 		background-image:url('/img/backgrounds/blue.jpg');
 	}
 
-	#blue-row .span4 {
-		vertical-align: center;
+	#pictures-row img {
+		padding: 10px 0px 10px;
+	}
+
+	#blue-row .span4:first-child {
+		padding: 80px 0px 20px;
 	}
 
 	#blue-row .span4:last-child {
-		padding-top: 20px;
-		padding-left: 10px;
+		padding: 1% 0px 1%;
 	}
 }
 
