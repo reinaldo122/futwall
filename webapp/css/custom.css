@@ -80,6 +80,7 @@ body {
 
 .carousel-inner div img {
 	width: 100%;
+	border: 5px 5px 5px 5px black;
 }
 
 #gray-row, #pictures-row{
