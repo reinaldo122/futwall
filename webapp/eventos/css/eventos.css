@@ -1,0 +1,9 @@
+@media screen and (min-width: 960px) {
+	.span10 {
+		padding: 60px;
+	}
+	div .map-container address{
+		max-width: 100%;
+		color: white;
+	}
+}

@@ -135,6 +135,9 @@ body {
 
 /* Desktop */
 @media screen and (min-width: 960px) {
+	.brand {
+		max-height: 70px;
+	}
 	.page {
 		padding-top: 60px;
 	}

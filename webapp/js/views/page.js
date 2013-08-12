@@ -20,18 +20,7 @@
         ".footer": new Footer()
       };
 
-      MainPage.prototype.events = {
-        "click .brand": "loadHome",
-        "click #nosotros": "loadNosotros",
-        "click #reglas": "loadReglas",
-        "click #equipos": "loadEquipos",
-        "click #canchas": "loadCanchas",
-        "click #noticias": "loadNoticias",
-        "click #galeria": "loadGaleria",
-        "click #contacto": "loadContacto",
-        "mouseover #menu-navbar": "solidNavbar",
-        "mouseout #menu-navbar": "transparentNavbar"
-      };
+      MainPage.prototype.events = {};
 
       MainPage.prototype.initialize = function() {
         $('header').scroll(function() {
@@ -63,7 +52,10 @@
         return this.setView(".page", new Equipos()).render();
       };
 
-      MainPage.prototype.loadCanchas = function(ev) {};
+      MainPage.prototype.loadCanchas = function(ev) {
+        ev.preventDefault();
+        return this.setView(".page", new Canchas()).render();
+      };
 
       MainPage.prototype.loadReglas = function(ev) {
         ev.preventDefault();

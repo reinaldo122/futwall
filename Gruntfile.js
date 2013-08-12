@@ -147,8 +147,8 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         '<%= yeoman.dist %>/js/**/*.js',
-                        '<%= yeoman.dist %>/css/{,*/}*.css',
-                        '<%= yeoman.dist %>/img/{,*/}*.{png,jpg,jpeg,gif,webp}',
+                        '<%= yeoman.dist %>/css/**/*.css',
+                        '<%= yeoman.dist %>/img/**/*.{png,jpg,jpeg,gif,webp}',
                         '<%= yeoman.dist %>/css/fonts/*'
                     ]
                 }
@@ -164,7 +164,7 @@ module.exports = function (grunt) {
             options: {
                 dirs: ['<%= yeoman.dist %>']
             },
-            html: ['<%= yeoman.dist %>/{,*/}*.html'],
+            html: ['<%= yeoman.dist %>/**/*.html'],
             css: ['<%= yeoman.dist %>/css/**/*.css']
         },
         imagemin: {
@@ -196,6 +196,20 @@ module.exports = function (grunt) {
                         '<%= yeoman.app %>/css/main.css'
                     ]
                 }
+            }
+        },
+        uglify: {
+            options: {
+              mangle: false,
+              report: 'gzip'
+            },
+            build: {
+              files: {
+                '<%= yeoman.dist %>/js/main.min.js': [
+                        '<%= yeoman.app %>/js/libs/jquery.js',
+                        '<%= yeoman.app %>/js/libs/bootstrap.js'
+                        ]
+              }
             }
         },
         htmlmin: {
@@ -342,8 +356,9 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'copy',
         'cssmin',
-        'requirejs',
-        'rev',
+        //'requirejs',
+        'uglify',
+        //'rev',
         'usemin'
     ]);
 
