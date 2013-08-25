@@ -6,3 +6,11 @@ webapp/bower_components
 webapp/img
 webapp/videos
 webapp/galeria/img/
+webapp/.htaccess
+webapp/contacto/.htaccess
+webapp/equipos/.htaccess
+webapp/eventos/.htaccess
+webapp/galeria/.htaccess
+webapp/nosotros/.htaccess
+webapp/noticias/.htaccess
+webapp/reglas/.htaccess
