@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <url>
+    <loc>http://myfutwall.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <video:video>     
+      <video:content_loc>
+        http://myfutwall.com/videos/hinchable1.mp4
+      </video:content_loc>
+      <video:player_loc allow_embed="no">
+        http://myfutwall.com
+      </video:player_loc>
+      <video:title>Futwall Hinchable</video:title>  
+      <video:description>
+        Explicación del juego
+      </video:description>
+    </video:video>
+    <video:video>     
+      <video:content_loc>
+        http://myfutwall.com/videos/hinchable2.mp4
+      </video:content_loc>
+      <video:player_loc allow_embed="no">
+        http://myfutwall.com
+      </video:player_loc>
+      <video:title>Futwall Hinchable Demostración</video:title>  
+      <video:description>
+        Demostración del Juego
+      </video:description>
+    </video:video>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/reglas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/equipos/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/eventos/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/noticias/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/galeria/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/nosotros/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://myfutwall.com/contacto/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+</urlset>
