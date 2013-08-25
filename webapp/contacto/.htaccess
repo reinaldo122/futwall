@@ -384,23 +384,23 @@ AddDefaultCharset utf-8
     #  and can remove the `<IfModule mod_filter.c>` and `</IfModule>` lines
     #  as `AddOutputFilterByType` is still in the core directives).
     <IfModule mod_filter.c>
-        AddOutputFilterByType DEFLATE application/atom+xml
-        AddOutputFilterByType DEFLATE application/javascript
-        AddOutputFilterByType DEFLATE application/json
-        AddOutputFilterByType DEFLATE application/rss+xml
-        AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
-        AddOutputFilterByType DEFLATE application/x-font-ttf
-        AddOutputFilterByType DEFLATE application/x-web-app-manifest+json
-        AddOutputFilterByType DEFLATE application/xhtml+xml
-        AddOutputFilterByType DEFLATE application/xml
-        AddOutputFilterByType DEFLATE font/opentype
-        AddOutputFilterByType DEFLATE image/svg+xml
-        AddOutputFilterByType DEFLATE image/x-icon
-        AddOutputFilterByType DEFLATE text/css
-        AddOutputFilterByType DEFLATE text/html
-        AddOutputFilterByType DEFLATE text/plain
-        AddOutputFilterByType DEFLATE text/x-component
-        AddOutputFilterByType DEFLATE text/xml
+        AddOutputFilterByType DEFLATE application/atom+xml \
+                                      application/javascript \
+                                      application/json \
+                                      application/rss+xml \
+                                      application/vnd.ms-fontobject \
+                                      application/x-font-ttf \
+                                      application/x-web-app-manifest+json \
+                                      application/xhtml+xml \
+                                      application/xml \
+                                      font/opentype \
+                                      image/svg+xml \
+                                      image/x-icon \
+                                      text/css \
+                                      text/html \
+                                      text/plain \
+                                      text/x-component \
+                                      text/xml
     </IfModule>
 
 </IfModule>
@@ -444,7 +444,7 @@ FileETag None
     ExpiresDefault                                      "access plus 1 month"
 
   # CSS
-    ExpiresByType text/css                              "access plus 1 week"
+    ExpiresByType text/css                              "access plus 1 year"
 
   # Data interchange
     ExpiresByType application/json                      "access plus 0 seconds"
@@ -461,7 +461,7 @@ FileETag None
     ExpiresByType text/html                             "access plus 0 seconds"
 
   # JavaScript
-    ExpiresByType application/javascript                "access plus 1 week"
+    ExpiresByType application/javascript                "access plus 1 year"
 
   # Manifest files
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"

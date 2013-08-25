@@ -2,16 +2,12 @@
   "name": "futwall",
   "version": "0.0.0",
   "dependencies": {
-    
     "bootstrap": "~2.3.2",
-    
     "layoutmanager": "~0.8.8",
-    
     "normalize-css": "~2.1.2",
-    
     "requirejs": "~2.1.4",
-    
-    "modernizr": "~2.6.2"
+    "modernizr": "~2.6.2",
+    "sass-bootstrap": "~3.0.0"
   },
   "devDependencies": {}
 }

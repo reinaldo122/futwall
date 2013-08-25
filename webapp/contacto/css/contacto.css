@@ -1,0 +1,79 @@
+/**
+Designed for: Futwall http://www.myfutwall.com
+Designed by: Crazy Eye Studios http://crazyeyestudios.com
+
+**/
+
+/**
+================ Resets and overrides
+*/
+
+body {
+	padding-top: 0px;
+	color: white;
+}
+
+/**
+================ Links and type
+*/
+
+/**
+================ Main layout
+*/
+
+
+
+/**
+================ Secondary layout structures
+*/
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'VIKINGS';
+	font-weight: bold;
+	font-style: normal;
+}
+
+/**
+================ Form elements
+*/
+
+
+/**
+================ Miscellaneous
+*/
+.link a, .link a:hover, .link a:after, .link a:before {
+	color: white;
+	font-family: EspumaPro-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/**
+================ Selectors
+*/
+ 
+/**
+================ Media Queries
+*/
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+	body {
+		padding-top: 80px;
+	}
+}
+
+/* Tablet */
+@media screen and (max-width:960px) {
+}
+
+/* Phone */
+@media screen and (max-width: 660px){
+
+}
+
+
+
+
+
+
+

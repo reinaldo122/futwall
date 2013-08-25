@@ -8,11 +8,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Futwall</title>
-    <meta name="description" content="">
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta name="description" content="Juego innovador y divertido que persigue proporcionar a los jugadores participantes, con la ayuda de elementos tecnológicos instalados en el campo de juego, sensaciones audiovisuales similares a las que experimentan los jugadores de fútbol profesionales en los encuentros de primer nivel. Además, “FUTWALL®”, por las características propias del juego, incentiva la destreza, la espectacularidad, y la técnica. Por su fácil ejecución es un juego no discriminador">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
-    <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
 
@@ -100,9 +100,13 @@
               <div class="span4"><img src="img/espanol/barraazul1/login.png"></img></div>
             </div>
             <div id="gray-row" class="row-fluid">
-              <div class="span4"><img src="/img/videos/v1.jpg"></img></div>
-              <div class="span4"><img src="/img/videos/v2.jpg"></img></div>
-              <div class="span4"><img src="/img/videos/v3.jpg"></img></div>
+              <div class="span4">
+                <video src="/videos/hinchable1.mp4" controls width="407" height="229">Tu navegador no soporta esta característica. Por favor actualízalo.</video>
+              </div>
+              <div class="span4"><iframe width="407" height="229" src="//www.youtube.com/embed/fc0YAGFoyO8?rel=0" frameborder="0" allowfullscreen></iframe></div>
+              <div class="span4">
+                <video src="/videos/hinchable2.mp4" controls width="407" height="229">Tu navegador no soporta esta característica. Por favor actualízalo.</video>
+              </div>
             </div>
             <div id="fill-row" class="row-fluid"></div>
             <div id="pictures-row" class="row-fluid blue-row">
@@ -137,8 +141,17 @@
 
       <div id="modals"></div>
     </div>
-    
     <script src="js/main.min.js"></script>
-    
-</body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43100168-1', 'myfutwall.com');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
 </html>

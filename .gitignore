@@ -3,3 +3,6 @@ dist
 .tmp
 .sass-cache
 webapp/bower_components
+webapp/img
+webapp/videos
+webapp/galeria/img/
